@@ -3,14 +3,22 @@ import ProductCard from '../ProductCard/ProductCard';
 import { productActions } from '../../actions/productActions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { Link } from 'react-router-dom';
 
 class ProductList extends Component {
   constructor(props) {
     super(props);
+
+    const initialPageNumber = parseInt(this.props.queryParams.get('page'), 10);
+    const initialPageSize = parseInt(
+      this.props.queryParams.get('per_page'),
+      10
+    );
+
     this.state = {
       loading: true,
-      pageNumber: 1,
-      pageSize: 8
+      pageNumber: initialPageNumber,
+      pageSize: initialPageSize
     };
     this.handlePageSizeTo8 = this.handlePageSizeTo8.bind(this);
     this.handlePageSizeTo16 = this.handlePageSizeTo16.bind(this);
@@ -84,12 +92,8 @@ class ProductList extends Component {
           <div className="listing_header__menu">
             <button>{pageSize} per page &#9660;</button>
             <div className="listing_header__menu_dropDown">
-              <a href="#" onClick={this.handlePageSizeTo8}>
-                8 per page
-              </a>
-              <a href="#" onClick={this.handlePageSizeTo16}>
-                16 per page
-              </a>
+              <Link to={'/home/?page=1&per_page=8'}>8 per page</Link>
+              <Link to={'/home/?page=1&per_page=16'}>16 per page</Link>
             </div>
           </div>
         </div>
