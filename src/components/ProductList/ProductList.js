@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import { productActions } from '../../actions/productActions';
+import Pagination from '../PaginationControl/PaginationControl';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
@@ -110,17 +111,12 @@ class ProductList extends Component {
           ))}
         </div>
 
-        <div className="listing_navigation">
-          <a href="#" className="listing_navigation__disabled">
-            Previous page{' '}
-          </a>
-          <a href="#" className="listing_navigation__active">
-            1
-          </a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">Next page &gt;</a>
-        </div>
+        <Pagination
+          pageNumber={pageNumber}
+          pageSize={pageSize}
+          totalProducts={productList.length}
+          maxPageNumbersToShow={4}
+        />
       </div>
     );
   }
