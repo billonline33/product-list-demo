@@ -39,7 +39,7 @@ const PaginationControl = props => {
           pageNumber === lastPage ? 'listing_navigation__disabled' : ''
         }
       >
-        Next page >
+        Next page {'>'}
       </Link>
     </div>
   );

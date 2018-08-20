@@ -141,6 +141,11 @@ hr {
   margin: 10px;
   padding-bottom: 10px;
 }
+
+.listing_header__title {
+  text-align: left;
+}
+
 .listing_header__title h1 {
   font-size: 28px;
   font-weight: bold;
@@ -208,11 +213,15 @@ a.listing_navigation__disabled {
   border-bottom: 3px solid #333;
 }
 
+p {
+  margin-top: 0.8em;
+}
+
 /* Large desktops and laptops */
 @media (min-width: 1200px) and (max-width: 1440px) {
   /* listing header */
   .listing_header__title h1 {
-    font-size: 26px;
+    font-size: 22px;
   }
   .listing_header__title p {
     font-size: 18px;
@@ -226,13 +235,13 @@ a.listing_navigation__disabled {
 
   /* listing content */
   .listing_content__element-description h2 {
-    font-size: 22px;
-  }
-  .listing_content__element-description p {
     font-size: 18px;
   }
+  .listing_content__element-description p {
+    font-size: 16px;
+  }
   .listing_content__element-description span {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   /* listing_navigation */
@@ -240,7 +249,7 @@ a.listing_navigation__disabled {
     margin: 25px;
   }
   .listing_navigation a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

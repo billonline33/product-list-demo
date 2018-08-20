@@ -5,24 +5,24 @@ import Pagination from '../PaginationControl/PaginationControl';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
+import { getProductPageUrl } from '../../utils';
 
 class ProductList extends Component {
   constructor(props) {
     super(props);
 
-    const initialPageNumber = parseInt(this.props.queryParams.get('page'), 10);
-    const initialPageSize = parseInt(
-      this.props.queryParams.get('per_page'),
-      10
-    );
+    let initialPageNumber = parseInt(this.props.queryParams.get('page'), 10);
+    let initialPageSize = parseInt(this.props.queryParams.get('per_page'), 10);
+
+    if (isNaN(initialPageNumber)) initialPageNumber = 1;
+    if (isNaN(initialPageSize)) initialPageSize = 8;
 
     this.state = {
       loading: true,
       pageNumber: initialPageNumber,
       pageSize: initialPageSize
     };
-    this.handlePageSizeTo8 = this.handlePageSizeTo8.bind(this);
-    this.handlePageSizeTo16 = this.handlePageSizeTo16.bind(this);
+
     this.reLoadProductPage = this.reLoadProductPage.bind(this);
   }
 
@@ -32,45 +32,7 @@ class ProductList extends Component {
     });
   }
 
-  handlePageSizeTo8() {
-    this.setState(
-      {
-        pageSize: 8
-      },
-      () => this.reLoadProductPage()
-    );
-  }
-  handlePageSizeTo16() {
-    this.setState(
-      {
-        pageSize: 16
-      },
-      () => this.reLoadProductPage()
-    );
-  }
-
-  handleNextPageClick() {
-    let currentPageNumber = this.state.pageNumber;
-    this.setState(
-      {
-        pageNumber: currentPageNumber + 1
-      },
-      () => this.reLoadProductPage()
-    );
-  }
-
-  handlePreviousPageClick() {
-    let currentPageNumber = this.state.pageNumber;
-    this.setState(
-      {
-        pageNumber: currentPageNumber - 1
-      },
-      () => this.reLoadProductPage()
-    );
-  }
-
   reLoadProductPage() {
-    console.log('this.state=', this.state);
     this.props.loadCurrentPage(
       this.state.pageNumber,
       this.state.pageSize,
@@ -93,8 +55,10 @@ class ProductList extends Component {
           <div className="listing_header__menu">
             <button>{pageSize} per page &#9660;</button>
             <div className="listing_header__menu_dropDown">
-              <Link to={'/home/?page=1&per_page=8'}>8 per page</Link>
-              <Link to={'/home/?page=1&per_page=16'}>16 per page</Link>
+              <Link to={getProductPageUrl(1, 8)}>8 per page</Link>
+              <Link to={getProductPageUrl(1, 16)}>16 per page</Link>
+              <Link to={getProductPageUrl(1, 32)}>32 per page</Link>
+              <Link to={getProductPageUrl(1, 64)}>64 per page</Link>
             </div>
           </div>
         </div>

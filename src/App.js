@@ -10,7 +10,8 @@ class App extends Component {
     return (
       <div className="App">
         <Route
-          path={'/home'}
+          path={'/'}
+          exact
           component={() => <ProductList queryParams={queryParams} />}
         />
       </div>
