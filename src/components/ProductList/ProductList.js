@@ -7,12 +7,14 @@ import { bindActionCreators } from 'redux';
 import { Link } from 'react-router-dom';
 import { getProductPageUrl } from '../../utils';
 
-class ProductList extends Component {
+// add export to ProductList so it can be tested without connect
+export class ProductList extends Component {
   constructor(props) {
     super(props);
 
-    let initialPageNumber = parseInt(this.props.queryParams.get('page'), 10);
-    let initialPageSize = parseInt(this.props.queryParams.get('per_page'), 10);
+    // small changes for getting data from queryParams
+    let initialPageNumber = parseInt(this.props.queryParams.page, 10);
+    let initialPageSize = parseInt(this.props.queryParams.per_page, 10);
 
     if (isNaN(initialPageNumber)) initialPageNumber = 1;
     if (isNaN(initialPageSize)) initialPageSize = 8;
@@ -43,7 +45,8 @@ class ProductList extends Component {
   render() {
     const { productList, currentProductList } = this.props;
     const { pageNumber, pageSize } = this.state;
-    console.log('currentProductLlist=', currentProductList);
+
+    //Todo: show loading when this.state.loading is true
     return (
       <div className="productListing">
         <div className="listing_header">
@@ -102,9 +105,8 @@ const mapStateToProps = state => {
   };
 };
 
-ProductList = connect(
+// export default connect so it could be tested separately from ProductList
+export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(ProductList);
-
-export default ProductList;

@@ -1,0 +1,271 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationControl component PaginationControl renders without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PaginationControl
+    maxPageNumbersToShow={4}
+    pageNumber={1}
+    pageSize={8}
+    totalProducts={16}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Link
+          className="listing_navigation__disabled"
+          replace={false}
+          to="/?page=0&per_page=8"
+>
+          &lt;
+           Previous page
+           
+</Link>,
+        Array [
+          <Link
+            className="listing_navigation__active"
+            replace={false}
+            to="/?page=1&per_page=8"
+>
+            1
+</Link>,
+          <Link
+            className=""
+            replace={false}
+            to="/?page=2&per_page=8"
+>
+            2
+</Link>,
+        ],
+        <Link
+          className=""
+          replace={false}
+          to="/?page=2&per_page=8"
+>
+          Next page 
+          &gt;
+</Link>,
+      ],
+      "className": "listing_navigation",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "<",
+            " Previous page",
+            " ",
+          ],
+          "className": "listing_navigation__disabled",
+          "replace": false,
+          "to": "/?page=0&per_page=8",
+        },
+        "ref": null,
+        "rendered": Array [
+          "<",
+          " Previous page",
+          " ",
+        ],
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "class",
+        "props": Object {
+          "children": 1,
+          "className": "listing_navigation__active",
+          "replace": false,
+          "to": "/?page=1&per_page=8",
+        },
+        "ref": null,
+        "rendered": 1,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "class",
+        "props": Object {
+          "children": 2,
+          "className": "",
+          "replace": false,
+          "to": "/?page=2&per_page=8",
+        },
+        "ref": null,
+        "rendered": 2,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            "Next page ",
+            ">",
+          ],
+          "className": "",
+          "replace": false,
+          "to": "/?page=2&per_page=8",
+        },
+        "ref": null,
+        "rendered": Array [
+          "Next page ",
+          ">",
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Link
+            className="listing_navigation__disabled"
+            replace={false}
+            to="/?page=0&per_page=8"
+>
+            &lt;
+             Previous page
+             
+</Link>,
+          Array [
+            <Link
+              className="listing_navigation__active"
+              replace={false}
+              to="/?page=1&per_page=8"
+>
+              1
+</Link>,
+            <Link
+              className=""
+              replace={false}
+              to="/?page=2&per_page=8"
+>
+              2
+</Link>,
+          ],
+          <Link
+            className=""
+            replace={false}
+            to="/?page=2&per_page=8"
+>
+            Next page 
+            &gt;
+</Link>,
+        ],
+        "className": "listing_navigation",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "<",
+              " Previous page",
+              " ",
+            ],
+            "className": "listing_navigation__disabled",
+            "replace": false,
+            "to": "/?page=0&per_page=8",
+          },
+          "ref": null,
+          "rendered": Array [
+            "<",
+            " Previous page",
+            " ",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "class",
+          "props": Object {
+            "children": 1,
+            "className": "listing_navigation__active",
+            "replace": false,
+            "to": "/?page=1&per_page=8",
+          },
+          "ref": null,
+          "rendered": 1,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "class",
+          "props": Object {
+            "children": 2,
+            "className": "",
+            "replace": false,
+            "to": "/?page=2&per_page=8",
+          },
+          "ref": null,
+          "rendered": 2,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Next page ",
+              ">",
+            ],
+            "className": "",
+            "replace": false,
+            "to": "/?page=2&per_page=8",
+          },
+          "ref": null,
+          "rendered": Array [
+            "Next page ",
+            ">",
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

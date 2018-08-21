@@ -1,4 +1,4 @@
-const apiUrl = 'https://whitechdevs.github.io/reactjs-test';
+const apiUrl = 'https://whitechdevs.github.io/reactjs-test'; //todo: remove hardcode data here
 
 export const productService = {
   loadProductCount,
@@ -6,7 +6,9 @@ export const productService = {
 };
 
 function loadProductCount() {
-  fetch(`${apiUrl}/products.json`).then(handleResponse);
+  return fetch(`${apiUrl}/products.json`).then(response =>
+    handleResponse(response).then(data => data.length)
+  );
 }
 
 function loadProductList(pageSize = 12, pageNumber = 1) {

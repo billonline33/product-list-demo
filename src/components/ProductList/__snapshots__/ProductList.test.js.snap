@@ -1,0 +1,1797 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList component Connected ProductList render without crashing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Connect(ProductList)
+    store={
+        Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "currentProductList": Array [],
+      "loadCurrentPage": [Function],
+      "loadProductList": [Function],
+      "productList": undefined,
+      "store": Object {
+        "clearActions": [Function],
+        "dispatch": [Function],
+        "getActions": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+      },
+      "storeSubscription": Subscription {
+        "listeners": Object {
+          "clear": [Function],
+          "get": [Function],
+          "notify": [Function],
+          "subscribe": [Function],
+        },
+        "onStateChange": [Function],
+        "parentSub": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "unsubscribe": [Function],
+      },
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "currentProductList": Array [],
+        "loadCurrentPage": [Function],
+        "loadProductList": [Function],
+        "productList": undefined,
+        "store": Object {
+          "clearActions": [Function],
+          "dispatch": [Function],
+          "getActions": [Function],
+          "getState": [Function],
+          "replaceReducer": [Function],
+          "subscribe": [Function],
+        },
+        "storeSubscription": Subscription {
+          "listeners": Object {
+            "clear": [Function],
+            "get": [Function],
+            "notify": [Function],
+            "subscribe": [Function],
+          },
+          "onStateChange": [Function],
+          "parentSub": undefined,
+          "store": Object {
+            "clearActions": [Function],
+            "dispatch": [Function],
+            "getActions": [Function],
+            "getState": [Function],
+            "replaceReducer": [Function],
+            "subscribe": [Function],
+          },
+          "unsubscribe": [Function],
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`ProductList component ProductList component renders without crashing with undefined queryParams 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductList
+    currentProductList={
+        Array [
+            Object {
+              "description": "test desc",
+              "id": 1,
+              "image": "",
+              "name": "test",
+              "price": 1,
+            },
+          ]
+    }
+    loadCurrentPage={[Function]}
+    loadProductList={[Function]}
+    productList={Array []}
+    queryParams={
+        Object {
+            "page": undefined,
+            "per_page": undefined,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="listing_header"
+>
+          <div
+                    className="listing_header__title"
+          >
+                    <h1>
+                              All Products
+                    </h1>
+                    <p>
+                              0
+                               products
+                    </p>
+          </div>
+          <div
+                    className="listing_header__menu"
+          >
+                    <button>
+                              8
+                               per page ▼
+                    </button>
+                    <div
+                              className="listing_header__menu_dropDown"
+                    >
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=8"
+                              >
+                                        8 per page
+                              </Link>
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=16"
+                              >
+                                        16 per page
+                              </Link>
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=32"
+                              >
+                                        32 per page
+                              </Link>
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=64"
+                              >
+                                        64 per page
+                              </Link>
+                    </div>
+          </div>
+</div>,
+        <div
+          className="listing_content"
+>
+          <ProductCard
+                    description="test desc"
+                    image={undefined}
+                    name={undefined}
+                    price={1}
+          />
+</div>,
+        <PaginationControl
+          maxPageNumbersToShow={4}
+          pageNumber={1}
+          pageSize={8}
+          totalProducts={0}
+/>,
+      ],
+      "className": "productListing",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="listing_header__title"
+>
+              <h1>
+                            All Products
+              </h1>
+              <p>
+                            0
+                             products
+              </p>
+</div>,
+            <div
+              className="listing_header__menu"
+>
+              <button>
+                            8
+                             per page ▼
+              </button>
+              <div
+                            className="listing_header__menu_dropDown"
+              >
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=8"
+                            >
+                                          8 per page
+                            </Link>
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=16"
+                            >
+                                          16 per page
+                            </Link>
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=32"
+                            >
+                                          32 per page
+                            </Link>
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=64"
+                            >
+                                          64 per page
+                            </Link>
+              </div>
+</div>,
+          ],
+          "className": "listing_header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  All Products
+</h1>,
+                <p>
+                  0
+                   products
+</p>,
+              ],
+              "className": "listing_header__title",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "All Products",
+                },
+                "ref": null,
+                "rendered": "All Products",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    0,
+                    " products",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  0,
+                  " products",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button>
+                  8
+                   per page ▼
+</button>,
+                <div
+                  className="listing_header__menu_dropDown"
+>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=8"
+                  >
+                                    8 per page
+                  </Link>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=16"
+                  >
+                                    16 per page
+                  </Link>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=32"
+                  >
+                                    32 per page
+                  </Link>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=64"
+                  >
+                                    64 per page
+                  </Link>
+</div>,
+              ],
+              "className": "listing_header__menu",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    8,
+                    " per page ▼",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  8,
+                  " per page ▼",
+                ],
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=8"
+>
+                      8 per page
+</Link>,
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=16"
+>
+                      16 per page
+</Link>,
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=32"
+>
+                      32 per page
+</Link>,
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=64"
+>
+                      64 per page
+</Link>,
+                  ],
+                  "className": "listing_header__menu_dropDown",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "8 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=8",
+                    },
+                    "ref": null,
+                    "rendered": "8 per page",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "16 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=16",
+                    },
+                    "ref": null,
+                    "rendered": "16 per page",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "32 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=32",
+                    },
+                    "ref": null,
+                    "rendered": "32 per page",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "64 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=64",
+                    },
+                    "ref": null,
+                    "rendered": "64 per page",
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ProductCard
+              description="test desc"
+              image={undefined}
+              name={undefined}
+              price={1}
+/>,
+          ],
+          "className": "listing_content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "description": "test desc",
+              "image": undefined,
+              "name": undefined,
+              "price": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "maxPageNumbersToShow": 4,
+          "pageNumber": 1,
+          "pageSize": 8,
+          "totalProducts": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="listing_header"
+>
+            <div
+                        className="listing_header__title"
+            >
+                        <h1>
+                                    All Products
+                        </h1>
+                        <p>
+                                    0
+                                     products
+                        </p>
+            </div>
+            <div
+                        className="listing_header__menu"
+            >
+                        <button>
+                                    8
+                                     per page ▼
+                        </button>
+                        <div
+                                    className="listing_header__menu_dropDown"
+                        >
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=8"
+                                    >
+                                                8 per page
+                                    </Link>
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=16"
+                                    >
+                                                16 per page
+                                    </Link>
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=32"
+                                    >
+                                                32 per page
+                                    </Link>
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=64"
+                                    >
+                                                64 per page
+                                    </Link>
+                        </div>
+            </div>
+</div>,
+          <div
+            className="listing_content"
+>
+            <ProductCard
+                        description="test desc"
+                        image={undefined}
+                        name={undefined}
+                        price={1}
+            />
+</div>,
+          <PaginationControl
+            maxPageNumbersToShow={4}
+            pageNumber={1}
+            pageSize={8}
+            totalProducts={0}
+/>,
+        ],
+        "className": "productListing",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="listing_header__title"
+>
+                <h1>
+                                All Products
+                </h1>
+                <p>
+                                0
+                                 products
+                </p>
+</div>,
+              <div
+                className="listing_header__menu"
+>
+                <button>
+                                8
+                                 per page ▼
+                </button>
+                <div
+                                className="listing_header__menu_dropDown"
+                >
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=8"
+                                >
+                                                8 per page
+                                </Link>
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=16"
+                                >
+                                                16 per page
+                                </Link>
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=32"
+                                >
+                                                32 per page
+                                </Link>
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=64"
+                                >
+                                                64 per page
+                                </Link>
+                </div>
+</div>,
+            ],
+            "className": "listing_header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    All Products
+</h1>,
+                  <p>
+                    0
+                     products
+</p>,
+                ],
+                "className": "listing_header__title",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "All Products",
+                  },
+                  "ref": null,
+                  "rendered": "All Products",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      0,
+                      " products",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    0,
+                    " products",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button>
+                    8
+                     per page ▼
+</button>,
+                  <div
+                    className="listing_header__menu_dropDown"
+>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=8"
+                    >
+                                        8 per page
+                    </Link>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=16"
+                    >
+                                        16 per page
+                    </Link>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=32"
+                    >
+                                        32 per page
+                    </Link>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=64"
+                    >
+                                        64 per page
+                    </Link>
+</div>,
+                ],
+                "className": "listing_header__menu",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      8,
+                      " per page ▼",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    8,
+                    " per page ▼",
+                  ],
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=8"
+>
+                        8 per page
+</Link>,
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=16"
+>
+                        16 per page
+</Link>,
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=32"
+>
+                        32 per page
+</Link>,
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=64"
+>
+                        64 per page
+</Link>,
+                    ],
+                    "className": "listing_header__menu_dropDown",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "8 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=8",
+                      },
+                      "ref": null,
+                      "rendered": "8 per page",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "16 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=16",
+                      },
+                      "ref": null,
+                      "rendered": "16 per page",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "32 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=32",
+                      },
+                      "ref": null,
+                      "rendered": "32 per page",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "64 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=64",
+                      },
+                      "ref": null,
+                      "rendered": "64 per page",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ProductCard
+                description="test desc"
+                image={undefined}
+                name={undefined}
+                price={1}
+/>,
+            ],
+            "className": "listing_content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "description": "test desc",
+                "image": undefined,
+                "name": undefined,
+                "price": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "maxPageNumbersToShow": 4,
+            "pageNumber": 1,
+            "pageSize": 8,
+            "totalProducts": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
+
+exports[`ProductList component ProductList component renders without creshing 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ProductList
+    currentProductList={
+        Array [
+            Object {
+              "description": "test desc",
+              "id": 1,
+              "image": "",
+              "name": "test",
+              "price": 1,
+            },
+          ]
+    }
+    loadCurrentPage={[Function]}
+    loadProductList={[Function]}
+    productList={Array []}
+    queryParams={
+        Object {
+            "page": "1",
+            "per_page": "8",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="listing_header"
+>
+          <div
+                    className="listing_header__title"
+          >
+                    <h1>
+                              All Products
+                    </h1>
+                    <p>
+                              0
+                               products
+                    </p>
+          </div>
+          <div
+                    className="listing_header__menu"
+          >
+                    <button>
+                              8
+                               per page ▼
+                    </button>
+                    <div
+                              className="listing_header__menu_dropDown"
+                    >
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=8"
+                              >
+                                        8 per page
+                              </Link>
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=16"
+                              >
+                                        16 per page
+                              </Link>
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=32"
+                              >
+                                        32 per page
+                              </Link>
+                              <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=64"
+                              >
+                                        64 per page
+                              </Link>
+                    </div>
+          </div>
+</div>,
+        <div
+          className="listing_content"
+>
+          <ProductCard
+                    description="test desc"
+                    image={undefined}
+                    name={undefined}
+                    price={1}
+          />
+</div>,
+        <PaginationControl
+          maxPageNumbersToShow={4}
+          pageNumber={1}
+          pageSize={8}
+          totalProducts={0}
+/>,
+      ],
+      "className": "productListing",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="listing_header__title"
+>
+              <h1>
+                            All Products
+              </h1>
+              <p>
+                            0
+                             products
+              </p>
+</div>,
+            <div
+              className="listing_header__menu"
+>
+              <button>
+                            8
+                             per page ▼
+              </button>
+              <div
+                            className="listing_header__menu_dropDown"
+              >
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=8"
+                            >
+                                          8 per page
+                            </Link>
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=16"
+                            >
+                                          16 per page
+                            </Link>
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=32"
+                            >
+                                          32 per page
+                            </Link>
+                            <Link
+                                          replace={false}
+                                          to="/?page=1&per_page=64"
+                            >
+                                          64 per page
+                            </Link>
+              </div>
+</div>,
+          ],
+          "className": "listing_header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  All Products
+</h1>,
+                <p>
+                  0
+                   products
+</p>,
+              ],
+              "className": "listing_header__title",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "All Products",
+                },
+                "ref": null,
+                "rendered": "All Products",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    0,
+                    " products",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  0,
+                  " products",
+                ],
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <button>
+                  8
+                   per page ▼
+</button>,
+                <div
+                  className="listing_header__menu_dropDown"
+>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=8"
+                  >
+                                    8 per page
+                  </Link>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=16"
+                  >
+                                    16 per page
+                  </Link>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=32"
+                  >
+                                    32 per page
+                  </Link>
+                  <Link
+                                    replace={false}
+                                    to="/?page=1&per_page=64"
+                  >
+                                    64 per page
+                  </Link>
+</div>,
+              ],
+              "className": "listing_header__menu",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    8,
+                    " per page ▼",
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  8,
+                  " per page ▼",
+                ],
+                "type": "button",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=8"
+>
+                      8 per page
+</Link>,
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=16"
+>
+                      16 per page
+</Link>,
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=32"
+>
+                      32 per page
+</Link>,
+                    <Link
+                      replace={false}
+                      to="/?page=1&per_page=64"
+>
+                      64 per page
+</Link>,
+                  ],
+                  "className": "listing_header__menu_dropDown",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "8 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=8",
+                    },
+                    "ref": null,
+                    "rendered": "8 per page",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "16 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=16",
+                    },
+                    "ref": null,
+                    "rendered": "16 per page",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "32 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=32",
+                    },
+                    "ref": null,
+                    "rendered": "32 per page",
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "64 per page",
+                      "replace": false,
+                      "to": "/?page=1&per_page=64",
+                    },
+                    "ref": null,
+                    "rendered": "64 per page",
+                    "type": [Function],
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <ProductCard
+              description="test desc"
+              image={undefined}
+              name={undefined}
+              price={1}
+/>,
+          ],
+          "className": "listing_content",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "class",
+            "props": Object {
+              "description": "test desc",
+              "image": undefined,
+              "name": undefined,
+              "price": 1,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "maxPageNumbersToShow": 4,
+          "pageNumber": 1,
+          "pageSize": 8,
+          "totalProducts": 0,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="listing_header"
+>
+            <div
+                        className="listing_header__title"
+            >
+                        <h1>
+                                    All Products
+                        </h1>
+                        <p>
+                                    0
+                                     products
+                        </p>
+            </div>
+            <div
+                        className="listing_header__menu"
+            >
+                        <button>
+                                    8
+                                     per page ▼
+                        </button>
+                        <div
+                                    className="listing_header__menu_dropDown"
+                        >
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=8"
+                                    >
+                                                8 per page
+                                    </Link>
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=16"
+                                    >
+                                                16 per page
+                                    </Link>
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=32"
+                                    >
+                                                32 per page
+                                    </Link>
+                                    <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=64"
+                                    >
+                                                64 per page
+                                    </Link>
+                        </div>
+            </div>
+</div>,
+          <div
+            className="listing_content"
+>
+            <ProductCard
+                        description="test desc"
+                        image={undefined}
+                        name={undefined}
+                        price={1}
+            />
+</div>,
+          <PaginationControl
+            maxPageNumbersToShow={4}
+            pageNumber={1}
+            pageSize={8}
+            totalProducts={0}
+/>,
+        ],
+        "className": "productListing",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="listing_header__title"
+>
+                <h1>
+                                All Products
+                </h1>
+                <p>
+                                0
+                                 products
+                </p>
+</div>,
+              <div
+                className="listing_header__menu"
+>
+                <button>
+                                8
+                                 per page ▼
+                </button>
+                <div
+                                className="listing_header__menu_dropDown"
+                >
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=8"
+                                >
+                                                8 per page
+                                </Link>
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=16"
+                                >
+                                                16 per page
+                                </Link>
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=32"
+                                >
+                                                32 per page
+                                </Link>
+                                <Link
+                                                replace={false}
+                                                to="/?page=1&per_page=64"
+                                >
+                                                64 per page
+                                </Link>
+                </div>
+</div>,
+            ],
+            "className": "listing_header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h1>
+                    All Products
+</h1>,
+                  <p>
+                    0
+                     products
+</p>,
+                ],
+                "className": "listing_header__title",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "All Products",
+                  },
+                  "ref": null,
+                  "rendered": "All Products",
+                  "type": "h1",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      0,
+                      " products",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    0,
+                    " products",
+                  ],
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button>
+                    8
+                     per page ▼
+</button>,
+                  <div
+                    className="listing_header__menu_dropDown"
+>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=8"
+                    >
+                                        8 per page
+                    </Link>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=16"
+                    >
+                                        16 per page
+                    </Link>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=32"
+                    >
+                                        32 per page
+                    </Link>
+                    <Link
+                                        replace={false}
+                                        to="/?page=1&per_page=64"
+                    >
+                                        64 per page
+                    </Link>
+</div>,
+                ],
+                "className": "listing_header__menu",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      8,
+                      " per page ▼",
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    8,
+                    " per page ▼",
+                  ],
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=8"
+>
+                        8 per page
+</Link>,
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=16"
+>
+                        16 per page
+</Link>,
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=32"
+>
+                        32 per page
+</Link>,
+                      <Link
+                        replace={false}
+                        to="/?page=1&per_page=64"
+>
+                        64 per page
+</Link>,
+                    ],
+                    "className": "listing_header__menu_dropDown",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "8 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=8",
+                      },
+                      "ref": null,
+                      "rendered": "8 per page",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "16 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=16",
+                      },
+                      "ref": null,
+                      "rendered": "16 per page",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "32 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=32",
+                      },
+                      "ref": null,
+                      "rendered": "32 per page",
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "64 per page",
+                        "replace": false,
+                        "to": "/?page=1&per_page=64",
+                      },
+                      "ref": null,
+                      "rendered": "64 per page",
+                      "type": [Function],
+                    },
+                  ],
+                  "type": "div",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <ProductCard
+                description="test desc"
+                image={undefined}
+                name={undefined}
+                price={1}
+/>,
+            ],
+            "className": "listing_content",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "class",
+              "props": Object {
+                "description": "test desc",
+                "image": undefined,
+                "name": undefined,
+                "price": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "maxPageNumbersToShow": 4,
+            "pageNumber": 1,
+            "pageSize": 8,
+            "totalProducts": 0,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getSnapshotBeforeUpdate": true,
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
