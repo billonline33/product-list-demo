@@ -3,3 +3,5 @@ You can run the app from heroku [image-product-list.herokuapp.com](https://image
 To run the test: npm test
 
 To see the coverage: npm run coverage
+
+jenkins test
