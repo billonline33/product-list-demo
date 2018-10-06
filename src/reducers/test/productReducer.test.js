@@ -1,5 +1,5 @@
-import { productConstants } from '../constants/productConstants';
-import { productReducer } from './productReducer';
+import { productConstants } from '../../constants/productConstants';
+import { productReducer } from '../productReducer';
 
 const initialState = {
   loading: true,
